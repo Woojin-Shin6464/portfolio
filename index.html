@@ -45,7 +45,7 @@
       <div class="home-container">
         <h1>안녕하세요 :)</h1>
         <h2>프론트엔드 개발자를 꿈꾸는 신우진입니다.</h2>
-        <a href="#contact" class="home-btn"
+        <a href="#about" class="home-btn"
           ><i class="fa-solid fa-chevron-down fa-la"></i
         ></a>
       </div>
@@ -53,7 +53,7 @@
     <!-- Main -->
     <main>
       <!-- About -->
-      <section id="about">
+      <section id="about" class="max-container">
         <div class="about-container">
           <div class="section-title">
             <span>About Me</span>
@@ -63,18 +63,18 @@
           <div class="row">
             <div class="about-profile"></div>
             <div class="about-content">
-              <ul>
-                <li>
+              <ul class="about-content--ul">
+                <li class="about-content--li">
                   <i class="fa-solid fa-angle-right fa-lg"></i>
                   <strong>이름:</strong>
                   <span>신우진</span>
                 </li>
-                <li>
+                <li class="about-content--li">
                   <i class="fa-solid fa-angle-right fa-lg"></i>
                   <strong>학교:</strong>
                   <span>경남대학교</span>
                 </li>
-                <li>
+                <li class="about-content--li">
                   <i class="fa-solid fa-angle-right fa-lg"></i>
                   <strong>전공:</strong>
                   <span>정보통신공학과, 스마트 제조ICT(USG 공유대학)</span>
@@ -83,19 +83,21 @@
             </div>
             <div class="about-skills">
               <ul>
-                <li>
-                  <i class="fa-brands fa-html5 fa-lg"></i>
-                  <p>Front-end</p>
+                <li class="about-skill">
+                  <i class="fa-brands fa-html5 about-skill__icon"></i>
+                  <p class="about-skill__title">Front-end</p>
                   <p>HTML, CSS, JavaScript, React</p>
                 </li>
-                <li>
-                  <i class="fa-solid fa-server fa-lg"></i>
-                  <p>Back-end</p>
+                <li class="about-skill">
+                  <i class="fa-solid fa-server about-skill__icon"></i>
+                  <p class="about-skill__title">Back-end</p>
                   <p>Java, NodeJS</p>
                 </li>
-                <li>
-                  <i class="fa-solid fa-mobile-screen-button fa-lg"></i>
-                  <p>Mobile</p>
+                <li class="about-skill">
+                  <i
+                    class="fa-solid fa-mobile-screen-button about-skill__icon"
+                  ></i>
+                  <p class="about-skill__title">Mobile</p>
                   <p>React Navtive, Java</p>
                 </li>
               </ul>
@@ -104,7 +106,7 @@
         </div>
       </section>
       <!-- Skill -->
-      <section id="skills">
+      <section id="skills" class="max-container">
         <div class="section-title">
           <span>Skill</span>
           <h2>Skill</h2>
@@ -147,7 +149,7 @@
         </div>
       </section>
       <!-- Project -->
-      <section id="projects">
+      <section id="projects" class="max-container">
         <div class="section-title">
           <span>Project</span>
           <h2>Project</h2>
@@ -236,7 +238,7 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer id="contact">
+    <footer id="contact" class="max-container">
       <h2>Let&#39;s talk</h2>
       <ul>
         <li>
