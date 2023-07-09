@@ -33,7 +33,7 @@
     <header id="header">
       <nav class="navbar">
         <ul>
-          <li><a href="#home">HOME</a></li>
+          <li><a class="active" href="#home">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#skills">SKILLS</a></li>
           <li><a href="#projects">PROJECT</a></li>
@@ -155,86 +155,102 @@
           <h2>Project</h2>
           <p>간단한 소개</p>
         </div>
-        <ul>
-          <li><button>ALL</button></li>
-          <li><button>JAVASCRIPT</button></li>
-          <li><button>REACT-JS</button></li>
-          <li><button>Java</button></li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#" target="_blank">
-              <img src="" alt="" />
-              <div>
-                <h3>Project #1</h3>
-                <p>프로젝트 설명</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank"
-              ><img src="" alt="" />
-              <div>
-                <h3>Project #2</h3>
-                <p>프로젝트 설명</p>
-              </div></a
-            >
-          </li>
-          <li>
-            <a href="#" target="_blank"
-              ><img src="" alt="" />
-              <div>
-                <h3>Project #3</h3>
-                <p>프로젝트 설명</p>
-              </div></a
-            >
-          </li>
-          <li>
-            <a href="#" target="_blank"
-              ><img src="" alt="" />
-              <div>
-                <h3>Project #4</h3>
-                <p>프로젝트 설명</p>
-              </div></a
-            >
-          </li>
-          <li>
-            <a href="#" target="_blank"
-              ><img src="" alt="" />
-              <div>
-                <h3>Project #5</h3>
-                <p>프로젝트 설명</p>
-              </div></a
-            >
-          </li>
-          <li>
-            <a href="#" target="_blank"
-              ><img src="" alt="" />
-              <div>
-                <h3>Project #6</h3>
-                <p>프로젝트 설명</p>
-              </div></a
-            >
-          </li>
-          <li>
-            <a href="#" target="_blank"
-              ><img src="" alt="" />
-              <div>
-                <h3>Project #7</h3>
-                <p>프로젝트 설명</p>
-              </div></a
-            >
-          </li>
-          <li>
-            <a href="#" target="_blank"
-              ><img src="" alt="" />
-              <div>
-                <h3>Project #8</h3>
-                <p>프로젝트 설명</p>
-              </div></a
-            >
-          </li>
-        </ul>
+        <div class="max-container">
+          <ul class="categories">
+            <li><button class="category category__selected">ALL</button></li>
+            <li><button class="category">JAVASCRIPT</button></li>
+            <li><button class="category">REACT</button></li>
+            <li><button class="category">Java</button></li>
+          </ul>
+          <ul class="projects">
+            <li class="project">
+              <a
+                href="https://github.com/Woojin-Shin6464/portfolio"
+                target="_blank"
+              >
+                <img
+                  src="/images/projects/project_01.png"
+                  alt=""
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Portfolio</h3>
+                  <p>프로젝트 설명</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img src="" alt="" class="project__img" />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #2</h3>
+                  <p>프로젝트 설명</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a
+                href="https://github.com/Woojin-Shin6464/momentum"
+                target="_blank"
+              >
+                <img
+                  src="/images/projects/project_03.png"
+                  alt=""
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Momentum</h3>
+                  <p>프로젝트 설명</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img src="" alt="" class="project__img" />
+                <div class="project__metadata">
+                  <h3 class="project__title">Youtube</h3>
+                  <p>프로젝트 설명</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank"
+                ><img src="" alt="" class="project__img" />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #5</h3>
+                  <p>프로젝트 설명</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img src="" alt="" class="project__img" />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #6</h3>
+                  <p>프로젝트 설명</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img src="" alt="" class="project__img" />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #7</h3>
+                  <p>프로젝트 설명</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img src="" alt="" class="project__img" />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #8</h3>
+                  <p>프로젝트 설명</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Footer -->
