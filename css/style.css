@@ -33,15 +33,8 @@ button {
   border: 0;
 }
 
-.max-container {
-  max-width: 1200px;
-  margin: auto;
-}
-
 section {
-  display: block;
-  height: 100vh;
-  padding: 4rem;
+  padding: 6rem;
   text-align: center;
 }
 
@@ -49,6 +42,7 @@ section {
   text-align: center;
   padding: 30px 0;
   position: relative;
+  margin-bottom: 3rem;
 }
 
 .section-title span {
@@ -59,13 +53,13 @@ section {
   right: 0;
   z-index: 1;
   font-weight: 700;
-  font-size: 52px;
+  font-size: 3.25rem;
   line-height: 0;
 }
 
 .section-title h2 {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 2rem;
   margin-bottom: 20px;
   padding-bottom: 0;
   color: var(--color-black);
@@ -74,6 +68,7 @@ section {
 }
 
 .section-title p {
+  font-size: 1.5rem;
   margin-bottom: 0;
   position: relative;
   z-index: 2;
@@ -140,20 +135,20 @@ section {
 
 .home-container h1 {
   color: var(--color-text);
-  margin: 0 0 20px 0;
-  font-size: 50px;
+  margin: 0 0 1.2rem 0;
+  font-size: 3rem;
   font-weight: 400;
 }
 
 .home-container h2 {
   color: var(--color-text);
-  margin-bottom: 50px;
-  font-size: 45px;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
   font-weight: 400;
 }
 
 .home-btn i {
-  font-size: 46px;
+  font-size: 2.5rem;
 }
 
 .home-btn i:hover {
@@ -175,108 +170,72 @@ section {
 }
 
 /* About */
-.about-container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+#about {
+  height: 100vh;
 }
 
-.row {
+.about__profile {
   display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  padding-right: calc(1.5rem * 4);
-  padding-left: calc(1.5rem * 4);
-  margin-top: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  justify-content: center;
+  align-items: center;
 }
 
-.about-profile {
-  background: url(../images/profile.jpg) center center no-repeat;
-  background-size: cover;
-  width: 30%;
-  max-width: 250px;
-  height: 250px;
-  min-width: 250px;
-  min-height: 250px;
-  border: 3px solid var(--color-accent);
-  border-radius: 100%;
-  justify-content: flex-start;
-  align-items: stretch;
+.profile__img {
+  max-width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  border: 2px solid var(--color-orange);
+  margin-right: 3rem;
 }
 
-.about-content {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  padding-top: 70px;
-  padding-right: calc(1.5rem * 2);
-  padding-left: calc(1.5rem * 3);
+.description {
+  font-size: 1.5rem;
+  text-align: left;
+  margin-bottom: 1rem;
 }
 
-.about-content--ul {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-
-.about-content--li {
-  margin-bottom: 20px;
-}
-
-.about-content i {
-  font-size: 22px;
-  margin-right: 6px;
+.description i {
   color: var(--color-accent);
 }
 
-.about-content ul strong {
-  margin-right: 8px;
-  font-size: 18px;
-  font-weight: bolder;
-}
-
-.about-content ul span {
-  font-size: 18px;
-}
-
-.about-skills {
-  width: 100%;
-}
-
-.about-skills ul {
+.majors {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 1rem;
   margin: 2.5rem 0;
 }
 
-.about-skill {
-  background-color: var(--color-green);
+.major {
+  width: 15rem;
+  background-color: var(--color-primary);
   padding: 2rem 1rem;
   color: var(--color-text);
   border-radius: 1rem;
-  min-width: 250px;
+  cursor: default;
+  box-shadow: 5px 5px 0px 0px rgba(109, 40, 217);
 }
 
-.about-skill__icon {
+.major__icon {
   font-size: 4rem;
   margin: 1rem 0;
-  color: var(--color-dark-green);
+  color: var(--color-accent);
+  transition: all 300ms ease;
 }
 
-.about-skill__title {
+.major__title {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
+.major:hover .major__icon {
+  transform: rotate(-15deg) scale(1.2);
+}
+
 /* Skill */
 #skills {
   background-color: #e6e6e6;
+  height: 100vh;
   max-width: 100%;
   padding: 64px 150px;
 }
@@ -320,6 +279,9 @@ section {
 }
 
 /* Project */
+#projects {
+  height: 100vh;
+}
 
 .categories {
   display: flex;
@@ -407,7 +369,7 @@ section {
   margin: 28px 0;
 }
 
-.description {
+.footer_description {
   font-size: 26px;
   font-weight: 600;
   margin: 4px 0;
@@ -433,4 +395,44 @@ section {
 .contact__link i:hover {
   color: var(--color-dark-green);
   transform: scale(1.2);
+}
+
+/* Media */
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 3rem 2rem;
+  }
+
+  .section-title span {
+    font-size: 2.5rem;
+  }
+
+  .section-title h2 {
+    font-size: 1.25rem;
+  }
+
+  .section-title p {
+    font-size: 1rem;
+  }
+
+  .home-container h1 {
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .home-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .home-btn i {
+    font-size: 1.5rem;
+  }
+
+  .about-profile {
+    max-width: 10rem;
+    height: 10rem;
+    min-width: 10rem;
+    min-height: 10rem;
+  }
 }
